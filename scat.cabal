@@ -67,5 +67,12 @@ executable scat
   other-modules:       Scat.Builder, Scat.Schemas, Scat.Options, Scat.Utils.Permutation, Paths_scat
   
   -- Other library packages from which modules are imported.
-  build-depends:       base ==4.5.*, scrypt ==0.3.*, bytestring ==0.9.*, optparse-applicative ==0.5.*, mtl ==2.1.*, vector ==0.10.*, ansi-terminal ==0.6.*
+  build-depends:
+    base >= 4.5 && < 5,
+    scrypt ==0.3.*,
+    bytestring >= 0.9 && < 1.0,
+    optparse-applicative >= 0.5 && < 1.0,
+    mtl == 2.1.*,
+    vector ==0.10.*,
+    ansi-terminal ==0.6.*
   
